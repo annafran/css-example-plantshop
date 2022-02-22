@@ -1,0 +1,25 @@
+name: Lighthouse
+on: [push]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: mkdir /tmp/artifacts
+      - name: Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          outputDirectory: /tmp/artifacts
+          urls: "https://replace-me.netlify.app"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Lighthouse reports
+          path: /tmp/artifacts
+      - name: Verify Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "100"
