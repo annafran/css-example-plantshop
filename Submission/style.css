@@ -13,7 +13,10 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
     background-color: #3f6660;
-    width: 100%;
+}
+.logoContainer {
+    width: 55%;
+    margin: 0 auto;
 }
 .logo {
     width: 100%;
@@ -29,6 +32,7 @@ ul {
 }
 .navLink {
     padding: 0.5rem;
+    font-size: 3vw;
 }
 
 .navLink a {
@@ -50,6 +54,7 @@ main {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: #3f6660;
 }
 
 .productItem {
