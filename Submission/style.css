@@ -32,6 +32,7 @@ body {
     background-color: #4e7e76;
     border: 0.125px solid #3a5f59;
 }
+
 .navLink {
     padding: 0.5rem;
     font-size: 3vw;
@@ -65,14 +66,36 @@ main {
 }
 
 .productName {
-    color: #3f6660;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.75rem;
 }
 
 .productCard {
-    padding: 1rem;
-    margin: 1.5rem;
-    border: 1px solid #3f6660;
+    margin: 2rem;
     border-radius: 0.125rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.productPrice {
+    color: grey;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.productLink {
+    border: none;
+    outline: 0;
+    padding: 1rem;
+    background-color: #3f6660;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.productLink a {
+    color: #fefffe;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 48rem) {
