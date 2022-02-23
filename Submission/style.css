@@ -57,13 +57,20 @@ main {
     color: #3f6660;
 }
 
-.productItem {
-    margin: 1.5rem;
-}
-
 .productPhoto {
     width: 100%;
     height: auto;
+}
+
+.productName {
+    color: #3f6660;
+}
+
+.productCard {
+    padding: 1rem;
+    margin: 1.5rem;
+    border: 1px solid #3f6660;
+    border-radius: 0.125rem;
 }
 
 @media only screen and (min-width: 48rem) {
