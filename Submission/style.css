@@ -15,7 +15,7 @@ body {
     background-color: #3f6660;
 }
 .logoContainer {
-    width: 55%;
+    width: 40%;
     margin: 0 auto;
 }
 .logo {
@@ -23,12 +23,14 @@ body {
     height: auto;
 }
 
-ul {
+.nav,
+.shopItems {
     list-style: none;
 }
 
 .nav {
-    margin-bottom: 0.5rem;
+    background-color: #4e7e76;
+    border: 0.125px solid #3a5f59;
 }
 .navLink {
     padding: 0.5rem;
