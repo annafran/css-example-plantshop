@@ -47,14 +47,16 @@ body {
     background-color: var(--darkWhite);
 }
 
-.productsHeading,
-.selectedProductName {
+.mainHeading {
+    color: #304f4a;
+    font-weight: 600;
+}
+
+.productsHeading {
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    color: #304f4a;
-    font-size: 1.8rem;
-    font-weight: 600;
 }
 
 .productCard,
@@ -96,7 +98,8 @@ body {
     font-weight: 400;
 }
 
-.productLink {
+.productLink,
+.buyLink {
     color: var(--darkWhite);
     text-decoration: none;
     width: 100%;
@@ -104,7 +107,8 @@ body {
     padding: 1rem;
 }
 
-.productLinkContainer {
+.productLinkContainer,
+.buyContainer {
     border: none;
     outline: 0;
     padding: 0;
@@ -118,10 +122,41 @@ body {
 .navLink:hover,
 .navLink:focus,
 .productLink:hover,
-.productLink:focus {
+.productLink:focus,
+.buyLink:hover,
+.buyLink:focus {
     cursor: pointer;
     color: var(--primaryGreen);
     background-color: var(--highlightGreen);
+}
+
+.selectedProductName {
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+.selectedProductSize,
+.selectedProductPot {
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+.selectedProductPrice {
+    color: #737373;
+    font-size: 1.6rem;
+    margin: 1.5rem;
+    font-weight: 400;
+}
+
+.selectedProductDescription {
+    margin: 1.5rem;
+    font-weight: 300;
+}
+
+.productLight,
+.productWater {
+    margin: 1.5rem;
+    font-weight: 300;
 }
 
 @media only screen and (min-width: 48rem) {
