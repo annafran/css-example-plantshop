@@ -137,26 +137,42 @@ body {
 
 .selectedProductSize,
 .selectedProductPot {
-    margin: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: var(--darkWhite);
+    background-color: #81b1aa;
+    width: max-content;
 }
 
 .selectedProductPrice {
     color: #737373;
     font-size: 1.6rem;
     margin: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .selectedProductDescription {
     margin: 1.5rem;
     font-weight: 300;
+    line-height: 1.4rem;
 }
 
 .productLight,
 .productWater {
     margin: 1.5rem;
     font-weight: 300;
+}
+
+.productFeatureName {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.productFeature {
+    line-height: 1.5rem;
 }
 
 @media only screen and (min-width: 48rem) {
