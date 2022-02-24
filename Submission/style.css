@@ -207,6 +207,20 @@ body {
     .productsHeading {
         text-align: left;
     }
+    .selectedProduct {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 0;
+    }
+    .selectedProductName,
+    .selectedProductSize,
+    .selectedProductPot,
+    .selectedProductPrice,
+    .selectedProductDescription,
+    .productFeature {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 64rem) {
