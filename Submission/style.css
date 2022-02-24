@@ -129,6 +129,10 @@ body {
         align-items: center;
         grid-gap: 3rem;
     }
+    .logoContainer {
+        justify-self: left;
+        margin-left: 3rem;
+    }
     .navContainer {
         grid-column: 2 / 4;
     }
