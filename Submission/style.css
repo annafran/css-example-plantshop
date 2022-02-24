@@ -169,7 +169,8 @@ body {
     font-weight: 300;
 }
 
-.productFeatureName {
+.productFeatureName,
+.addressLabel {
     font-weight: 500;
     font-size: 1.125rem;
 }
@@ -181,10 +182,6 @@ body {
 .contactFormContainer {
     background-color: #ebeeeb;
     padding: 1rem;
-}
-
-.contactDetailsContainer {
-    margin: 3rem;
 }
 
 .form-label {
@@ -231,6 +228,20 @@ body {
     cursor: pointer;
     color: var(--primaryGreen);
     background-color: var(--highlightGreen);
+}
+
+.contactDetailsContainer {
+    margin: 3rem;
+}
+
+.contactHeading {
+    margin-bottom: 1.25rem;
+}
+
+.contactDetails {
+    line-height: 1.4rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 48rem) {
