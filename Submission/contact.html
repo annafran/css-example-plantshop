@@ -35,9 +35,51 @@
                 </nav>
             </header>
             <main class="main">
-                <section class="contactFormContainer">
-                    <form action=""></form>
-                </section>
+                <h1>Feel free to get in touch anytime</h1>
+                <div class="contactContainer">
+                    <section class="contactFormContainer">
+                        <form class="contactForm" action="#">
+                            <div class="nameSection">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="name"
+                                    required
+                                />
+                            </div>
+                            <div class="emailSection">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="email"
+                                    required
+                                />
+                            </div>
+                            <div class="messageSection">
+                                <label for="message">Message</label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="contactDetailsContainer">
+                        <h2>Contact details:</h2>
+                        <p>123 Fake Street<br />Auckland<br />New Zealand</p>
+                        <p>Phone: 09 123 45678</p>
+                        <p>
+                            Email:
+                            <a href="emailto:sales@plantsandthings.co.nz"
+                                >sales@plantsandthings.co.nz</a
+                            >
+                        </p>
+                    </section>
+                </div>
             </main>
         </div>
     </body>

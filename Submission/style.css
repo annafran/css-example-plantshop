@@ -61,7 +61,7 @@ body {
 
 .productCard,
 .selectedProduct,
-.contactFormContainer {
+.contactContainer {
     margin: 3rem;
     border-radius: 0.125rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
