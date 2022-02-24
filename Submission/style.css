@@ -61,7 +61,7 @@ body {
 
 .productCard,
 .selectedProduct,
-.contactContainer {
+.contactFormContainer {
     margin: 3rem;
     border-radius: 0.125rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -178,28 +178,59 @@ body {
     line-height: 1.5rem;
 }
 
+.contactFormContainer {
+    background-color: #ebeeeb;
+    padding: 1rem;
+}
+
+.contactDetailsContainer {
+    margin: 3rem;
+}
+
 .form-label {
     display: block;
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .form-input {
     display: block;
     width: 100%;
-    border-radius: 0.5rem;
     font-size: 1.1rem;
     padding: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
     font-family: inherit;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
 }
 
 .message {
     height: 7rem;
+    resize: none;
+    overflow: scroll;
+    width: 100%;
 }
 
 .buttonContainer {
     text-align: center;
+}
+
+.button {
+    background: var(--primaryGreen);
+    color: var(--darkWhite);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 150ms;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    color: var(--primaryGreen);
+    background-color: var(--highlightGreen);
 }
 
 @media only screen and (min-width: 48rem) {
