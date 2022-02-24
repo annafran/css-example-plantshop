@@ -225,7 +225,8 @@ body {
 
 @media only screen and (min-width: 64rem) {
     .header,
-    .productsList {
+    .productsList,
+    .selectedProduct {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .navContainer {
@@ -237,5 +238,9 @@ body {
     }
     .productName {
         font-size: 1.5rem;
+    }
+    .selectedProductContainer {
+        grid-column: 2 / 4;
+        grid-gap: 3rem;
     }
 }
