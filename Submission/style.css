@@ -288,6 +288,15 @@ body {
         border-radius: 0.125rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .contactFormContainer,
+    .contactDetailsContainer {
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 64rem) {
