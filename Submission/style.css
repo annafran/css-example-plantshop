@@ -47,7 +47,8 @@ body {
     background-color: var(--darkWhite);
 }
 
-.productsHeading {
+.productsHeading,
+.selectedProductName {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -56,13 +57,15 @@ body {
     font-weight: 600;
 }
 
-.productCard {
+.productCard,
+.selectedProduct {
     margin: 3rem;
     border-radius: 0.125rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.productPhoto {
+.productPhoto,
+.selectedProductPhoto {
     width: 100%;
     height: auto;
 }
