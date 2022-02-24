@@ -35,41 +35,49 @@
                 </nav>
             </header>
             <main class="main">
-                <h1>Feel free to get in touch anytime</h1>
+                <h1 class="primaryHeading secondaryHeading">
+                    Feel free to get in touch anytime
+                </h1>
                 <div class="contactContainer">
                     <section class="contactFormContainer">
                         <form class="contactForm" action="#">
-                            <div class="nameSection">
-                                <label for="name">Name</label>
+                            <div class="form-group nameSection">
+                                <label for="form-label">Name</label>
                                 <input
                                     type="text"
                                     id="name"
-                                    class="name"
+                                    class="form-input name"
                                     required
                                 />
                             </div>
-                            <div class="emailSection">
-                                <label for="email">Email</label>
+                            <div class="form-group emailSection">
+                                <label for="form-label">Email</label>
                                 <input
                                     type="email"
                                     id="email"
-                                    class="email"
+                                    class="form-input email"
                                     required
                                 />
                             </div>
-                            <div class="messageSection">
-                                <label for="message">Message</label>
+                            <div class="form-group messageSection">
+                                <label for="form-label">Message</label>
                                 <textarea
                                     name="message"
                                     id="message"
                                     cols="30"
                                     rows="10"
+                                    class="form-input message"
                                 ></textarea>
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="submit" class="button">
+                                    Contact us
+                                </button>
                             </div>
                         </form>
                     </section>
                     <section class="contactDetailsContainer">
-                        <h2>Contact details:</h2>
+                        <h2 class="secondaryHeading">Contact details:</h2>
                         <p>123 Fake Street<br />Auckland<br />New Zealand</p>
                         <p>Phone: 09 123 45678</p>
                         <p>

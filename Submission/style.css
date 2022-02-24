@@ -47,16 +47,16 @@ body {
     background-color: var(--darkWhite);
 }
 
-.mainHeading {
-    color: #304f4a;
-    font-weight: 600;
-}
-
-.productsHeading {
+.primaryHeading {
     font-size: 1.8rem;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.secondaryHeading {
+    color: #304f4a;
+    font-weight: 600;
 }
 
 .productCard,
@@ -73,7 +73,8 @@ body {
     height: auto;
 }
 
-.productName {
+.productName,
+.contactDetailsHeading {
     padding: 1rem 1rem 0 1rem;
     font-size: 1.75rem;
     font-weight: 400;
@@ -177,6 +178,30 @@ body {
     line-height: 1.5rem;
 }
 
+.form-label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+}
+
+.message {
+    height: 7rem;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
 @media only screen and (min-width: 48rem) {
     .header,
     .productsList {
@@ -205,7 +230,7 @@ body {
     .main {
         margin: 3rem;
     }
-    .productsHeading {
+    .primaryHeading {
         text-align: left;
     }
     .selectedProduct {
@@ -232,7 +257,7 @@ body {
     .navContainer {
         grid-column: 3 / 4;
     }
-    .productsHeading {
+    .primaryHeading {
         font-size: 2rem;
         text-align: left;
     }
