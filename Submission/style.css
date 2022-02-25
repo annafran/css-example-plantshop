@@ -252,6 +252,26 @@ body {
         align-items: center;
         grid-gap: 3rem;
     }
+    .selectedProduct {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        grid-gap: 2rem;
+    }
+    .navList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        margin-right: 3rem;
+        grid-gap: 2rem;
+    }
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
     .logoContainer {
         justify-self: left;
         margin-left: 3rem;
@@ -259,41 +279,26 @@ body {
     .navContainer {
         grid-column: 2 / 4;
     }
-    .navList {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
-        justify-content: end;
-        margin-right: 3rem;
-    }
-    .productCard {
-        margin: 0;
-        height: 100%;
-        display: grid;
-    }
+
     .main {
         margin: 3rem;
     }
     .primaryHeading {
         text-align: left;
     }
-    .selectedProduct {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
 
     .selectedProductContainer {
         border-radius: 0.125rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
-    .contactContainer {
+    .productCard {
+        margin: 0;
+        height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+    }
+    .productLinkContainer {
+        height: max-content;
+        align-self: end;
     }
     .contactFormContainer,
     .contactDetailsContainer {
@@ -334,3 +339,63 @@ body {
         grid-column: 1 / 3;
     }
 }
+
+/* @media only screen and (min-width: 48rem) {
+    .header,
+    .productsList,
+    .navList,
+    .selectedProduct,
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header,
+    .productsList {
+        align-items: center;
+        grid-gap: 3rem;
+    }
+    .logoContainer {
+        justify-self: left;
+        margin-left: 3rem;
+    }
+    .navContainer {
+        grid-column: 2 / 4;
+    }
+    .navList {
+        justify-content: end;
+        margin-right: 3rem;
+    }
+    .main {
+        margin: 3rem;
+    }
+    .primaryHeading {
+        text-align: left;
+    }
+    .selectedProduct {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .selectedProductContainer {
+        border-radius: 0.125rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .navList,
+    .selectedProduct,
+    .contactContainer {
+        grid-gap: 2rem;
+    }
+    .productCard {
+        margin: 0;
+        height: 100%;
+        display: grid;
+    }
+    .productLinkContainer {
+        height: max-content;
+        align-self: end;
+    }
+    .contactFormContainer,
+    .contactDetailsContainer {
+        margin: 0;
+    }
+} */
