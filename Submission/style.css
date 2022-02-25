@@ -268,6 +268,8 @@ body {
     }
     .productCard {
         margin: 0;
+        height: 100%;
+        display: grid;
     }
     .main {
         margin: 3rem;
