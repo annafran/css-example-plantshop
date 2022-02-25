@@ -45,6 +45,8 @@ body {
 
 .main {
     background-color: var(--darkWhite);
+    /* margin: 3rem auto;
+    width: 80%; */
 }
 
 .primaryHeading {
@@ -318,5 +320,13 @@ body {
     .selectedProductContainer {
         grid-column: 2 / 4;
         grid-gap: 3rem;
+    }
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+    }
+    .contactFormContainer {
+        grid-column: 1 / 3;
     }
 }
