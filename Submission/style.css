@@ -45,8 +45,6 @@ body {
 
 .main {
     background-color: var(--darkWhite);
-    /* margin: 3rem auto;
-    width: 80%; */
 }
 
 .primaryHeading {
@@ -313,6 +311,10 @@ body {
     .primaryHeading {
         font-size: 2rem;
         text-align: left;
+    }
+    .main {
+        margin: 3rem auto;
+        width: 80%;
     }
     .productName {
         font-size: 1.5rem;
