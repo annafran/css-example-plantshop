@@ -128,14 +128,17 @@ body {
     font-weight: 400;
 }
 
+.selectedProductText {
+    padding: 1.5rem;
+}
+
 .selectedProductName {
-    margin: 1.5rem;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .selectedProductSize,
 .selectedProductPot {
-    margin-left: 1.5rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
     border-radius: 1rem;
@@ -148,20 +151,21 @@ body {
 .selectedProductPrice {
     color: #737373;
     font-size: 1.6rem;
-    margin: 1.5rem;
     font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .selectedProductDescription {
-    margin: 1.5rem;
     font-weight: 300;
     line-height: 1.4rem;
+    margin-bottom: 1.5rem;
 }
 
 .productLight,
 .productWater {
-    margin: 1.5rem;
     font-weight: 300;
+    margin-bottom: 0.5rem;
 }
 
 .productFeatureName,
