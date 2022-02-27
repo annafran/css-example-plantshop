@@ -21,11 +21,17 @@ body {
 .header {
     background-color: var(--primaryGreen);
 }
+
+.main {
+    background-color: var(--darkWhite);
+}
+
 .logoContainer {
     width: 40%;
     margin: 0 auto;
 }
-.logo {
+.logo,
+.productPhoto {
     width: 100%;
     height: auto;
 }
@@ -75,10 +81,6 @@ body {
     background-color: var(--highlightGreen);
 }
 
-.main {
-    background-color: var(--darkWhite);
-}
-
 .primaryHeading {
     font-size: 1.8rem;
     text-align: center;
@@ -99,12 +101,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.productPhoto,
-.selectedProductPhoto {
-    width: 100%;
-    height: auto;
-}
-
 .productName,
 .contactDetailsHeading {
     padding: 1rem 1rem 0 1rem;
@@ -112,17 +108,17 @@ body {
     font-weight: 400;
     color: var(--headingGreen);
 }
-
-.productSize {
-    padding: 1rem 1rem 0 1rem;
+.productFeatures {
     font-size: 1rem;
     font-weight: 300;
 }
 
+.productSize {
+    padding: 1rem 1rem 0 1rem;
+}
+
 .productPot {
     padding: 0 1rem;
-    font-size: 1rem;
-    font-weight: 300;
 }
 
 .productPrice {
@@ -141,8 +137,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.selectedProductSize,
-.selectedProductPot {
+.selectedProductFeatures {
     margin-bottom: 0.5rem;
     font-size: 1rem;
     border-radius: 1rem;
@@ -166,20 +161,16 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.productLight,
-.productWater {
+.productInstructions {
     font-weight: 300;
     margin-bottom: 0.5rem;
+    line-height: 1.5rem;
 }
 
-.productFeatureName,
+.productInstructionsHeader,
 .addressLabel {
     font-weight: 500;
     font-size: 1.125rem;
-}
-
-.productFeature {
-    line-height: 1.5rem;
 }
 
 .contactFormContainer {
@@ -231,10 +222,15 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .largeGridGap {
+        grid-gap: 3rem;
+    }
+    .smallGridGap {
+        grid-gap: 2rem;
+    }
     .header,
     .productsList {
         align-items: center;
-        grid-gap: 3rem;
     }
     .logoContainer {
         justify-self: left;
@@ -262,11 +258,6 @@ body {
         border-radius: 0.125rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
-    .navList,
-    .selectedProduct,
-    .contactContainer {
-        grid-gap: 2rem;
-    }
     .productCard {
         margin: 0;
         height: 100%;
@@ -286,6 +277,9 @@ body {
     .gridDesktop {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .largeGridGap {
+        grid-gap: 3rem;
+    }
     .navContainer {
         grid-column: 3 / 4;
     }
@@ -302,12 +296,6 @@ body {
     }
     .selectedProductContainer {
         grid-column: 2 / 4;
-        grid-gap: 3rem;
-    }
-    .contactContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3rem;
     }
     .contactFormContainer {
         grid-column: 1 / 3;
