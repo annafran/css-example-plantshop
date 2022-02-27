@@ -6,8 +6,12 @@
 
 :root {
     --primaryGreen: #3f6660;
+    --secondaryGreen: #4e7e77;
     --highlightGreen: #8bdf83;
     --darkWhite: #fefffe;
+    --headingGreen: #304f4a;
+    --featureGrey: #737373;
+    --greenishGrey: #ebeeeb;
 }
 
 body {
@@ -31,7 +35,7 @@ body {
 }
 
 .navLink {
-    background-color: #4e7e77;
+    background-color: var(--secondaryGreen);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
@@ -83,7 +87,7 @@ body {
 }
 
 .secondaryHeading {
-    color: #304f4a;
+    color: var(--headingGreen);
     font-weight: 600;
 }
 
@@ -106,7 +110,7 @@ body {
     padding: 1rem 1rem 0 1rem;
     font-size: 1.75rem;
     font-weight: 400;
-    color: #304f4a;
+    color: var(--headingGreen);
 }
 
 .productSize {
@@ -122,7 +126,7 @@ body {
 }
 
 .productPrice {
-    color: #737373;
+    color: var(--featureGrey);
     font-size: 1.6rem;
     padding: 1rem;
     font-weight: 400;
@@ -144,12 +148,12 @@ body {
     border-radius: 1rem;
     padding: 0.5rem;
     color: var(--darkWhite);
-    background-color: #4e7e77;
+    background-color: var(--secondaryGreen);
     width: max-content;
 }
 
 .selectedProductPrice {
-    color: #737373;
+    color: var(--featureGrey);
     font-size: 1.6rem;
     font-weight: 500;
     margin-top: 1.5rem;
@@ -179,7 +183,7 @@ body {
 }
 
 .contactFormContainer {
-    background-color: #ebeeeb;
+    background-color: var(--greenishGrey);
     padding: 1rem;
 }
 
