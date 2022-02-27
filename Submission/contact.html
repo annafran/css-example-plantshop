@@ -14,100 +14,93 @@
         <title>Contact</title>
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <div class="logoContainer">
-                    <img
-                        class="logo"
-                        src="images/logo-transparent.png"
-                        alt="company logo"
-                    />
-                </div>
-                <nav class="navContainer">
-                    <ul class="navList list">
-                        <li class="navItem">
-                            <a class="navLink" href="/index.html">Home</a>
-                        </li>
-                        <li class="navItem">
-                            <a class="navLink" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="main">
-                <h1 class="primaryHeading secondaryHeading">
-                    Feel free to get in touch anytime
-                </h1>
-                <div class="contactContainer">
-                    <section class="contactFormContainer">
-                        <form
-                            class="contactForm"
-                            action="https://formspree.io/f/mvolrpew"
-                            method="post"
-                        >
-                            <div class="form-group nameSection">
-                                <label for="name" class="form-label"
-                                    >Name</label
-                                >
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    class="form-input name"
-                                    required
-                                />
-                            </div>
-                            <div class="form-group emailSection">
-                                <label for="email" class="form-label"
-                                    >Email</label
-                                >
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    class="form-input email"
-                                    required
-                                />
-                            </div>
-                            <div class="form-group messageSection">
-                                <label for="message" class="form-label"
-                                    >Message</label
-                                >
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                    cols="30"
-                                    rows="10"
-                                    class="form-input message"
-                                ></textarea>
-                            </div>
-                            <div class="buttonContainer">
-                                <button type="submit" class="button">
-                                    Contact us
-                                </button>
-                            </div>
-                        </form>
-                    </section>
-                    <section class="contactDetailsContainer">
-                        <h2 class="secondaryHeading contactHeading">
-                            Contact details:
-                        </h2>
-                        <p class="contactDetails">
-                            123 Fake Street<br />Auckland<br />New Zealand
-                        </p>
-                        <p class="contactDetails">
-                            <span class="addressLabel">Phone:</span> 09 123
-                            45678
-                        </p>
-                        <p class="contactDetails">
-                            <span class="addressLabel">Email:</span>
-                            <a href="emailto:sales@plantsandthings.co.nz"
-                                >sales@plantsandthings.co.nz</a
+        <header class="header gridTablet">
+            <div class="logoContainer">
+                <img
+                    class="logo"
+                    src="images/logo-transparent.png"
+                    alt="company logo"
+                />
+            </div>
+            <nav class="navContainer">
+                <ul class="navList list gridTablet">
+                    <li class="navItem">
+                        <a class="navLink" href="/index.html">Home</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="primaryHeading secondaryHeading">
+                Feel free to get in touch anytime
+            </h1>
+            <div class="contactContainer gridTablet">
+                <section class="contactFormContainer">
+                    <form
+                        class="contactForm"
+                        action="https://formspree.io/f/mvolrpew"
+                        method="post"
+                    >
+                        <div class="form-group nameSection">
+                            <label for="name" class="form-label">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-input name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group emailSection">
+                            <label for="email" class="form-label">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group messageSection">
+                            <label for="message" class="form-label"
+                                >Message</label
                             >
-                        </p>
-                    </section>
-                </div>
-            </main>
-        </div>
+                            <textarea
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                                class="form-input message"
+                            ></textarea>
+                        </div>
+                        <div class="buttonContainer">
+                            <button type="submit" class="button">
+                                Contact us
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <section class="contactDetailsContainer">
+                    <h2 class="secondaryHeading contactHeading">
+                        Contact details:
+                    </h2>
+                    <p class="contactDetails">
+                        123 Fake Street<br />Auckland<br />New Zealand
+                    </p>
+                    <p class="contactDetails">
+                        <span class="addressLabel">Phone:</span> 09 123 45678
+                    </p>
+                    <p class="contactDetails">
+                        <span class="addressLabel">Email:</span>
+                        <a href="emailto:sales@plantsandthings.co.nz"
+                            >sales@plantsandthings.co.nz</a
+                        >
+                    </p>
+                </section>
+            </div>
+        </main>
     </body>
 </html>
