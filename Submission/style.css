@@ -15,6 +15,7 @@
   --smallFont: 1.1rem;
   --smallMedFont: 1.3rem;
   --mediumFont: 1.5rem;
+  --medLargeFont: 1.8rem;
   --largeFont: 2rem;
 }
 
@@ -107,7 +108,8 @@ body {
 }
 
 .primaryHeading {
-  font-size: 1.8rem;
+  font-size: var(--medLargeFont);
+  font-weight: 600;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -115,7 +117,11 @@ body {
 
 .secondaryHeading {
   color: var(--headingGreen);
-  font-weight: 600;
+}
+
+.contactHeading {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
 }
 
 .productCard,
@@ -126,15 +132,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.productName,
-.contactDetailsHeading {
+.productName {
   font-size: var(--mediumFont);
   font-weight: 500;
   color: var(--headingGreen);
-}
-
-.contactDetailsHeading {
-  padding: 1rem 1rem 0 1rem;
 }
 
 .productFeatures {
@@ -169,6 +170,7 @@ body {
 
 .selectedProductName {
   font-size: var(--mediumFont);
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -226,10 +228,6 @@ body {
 
 .contactDetailsContainer {
   margin: 3rem;
-}
-
-.contactHeading {
-  margin-bottom: 1.25rem;
 }
 
 .contactDetails {
