@@ -64,10 +64,18 @@ body {
   color: var(--darkWhite);
   text-decoration: none;
   width: 100%;
-  display: block;
   padding: 1rem;
   border: none;
   text-align: center;
+}
+
+.formGroup,
+.productInstructionsHeader,
+.navLink,
+.productLink,
+.buyLink,
+.button {
+  display: block;
 }
 
 .productLink,
@@ -180,17 +188,9 @@ body {
   font-weight: 500;
 }
 
-.productInstructionsHeader {
-  display: block;
-}
-
 .contactFormContainer {
   background-color: var(--greenishGrey);
   padding: 1rem;
-}
-
-.formGroup {
-  display: block;
 }
 
 .formLabel {
