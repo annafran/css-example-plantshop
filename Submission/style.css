@@ -40,11 +40,21 @@ body {
   list-style: none;
 }
 
+.navLink,
+.productFeatures,
+.selectedProductFeatures,
+.productInstructionsHeader,
+.addressLabel,
+.formLabel,
+.formInput,
+.contactDetails {
+  font-size: 1.1rem;
+}
+
 .navLink {
   background-color: var(--secondaryGreen);
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1rem;
 }
 
 .navLink,
@@ -109,7 +119,6 @@ body {
   color: var(--headingGreen);
 }
 .productFeatures {
-  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -139,7 +148,6 @@ body {
 
 .selectedProductFeatures {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
   border-radius: 1rem;
   padding: 0.5rem;
   color: var(--darkWhite);
@@ -170,7 +178,6 @@ body {
 .productInstructionsHeader,
 .addressLabel {
   font-weight: 500;
-  font-size: 1.125rem;
 }
 
 .contactFormContainer {
@@ -178,16 +185,15 @@ body {
   padding: 1rem;
 }
 
-.form-group {
-  font-size: 1.1rem;
+.formGroup {
   display: block;
 }
 
-.form-label {
+.formLabel {
   margin-bottom: 0.5rem;
 }
 
-.form-input {
+.formInput {
   width: 100%;
   padding: 1rem;
   margin-top: 0.5rem;
@@ -215,7 +221,6 @@ body {
 .contactDetails {
   line-height: 1.4rem;
   padding-bottom: 0.8rem;
-  font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 48rem) {
