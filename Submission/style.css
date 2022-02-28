@@ -180,6 +180,10 @@ body {
   font-weight: 500;
 }
 
+.productInstructionsHeader {
+  display: block;
+}
+
 .contactFormContainer {
   background-color: var(--greenishGrey);
   padding: 1rem;
