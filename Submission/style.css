@@ -13,6 +13,7 @@
   --featureGrey: #737373;
   --greenishGrey: #ebeeeb;
   --smallFont: 1.1rem;
+  --smallMedFont: 1.3rem;
   --mediumFont: 1.5rem;
   --largeFont: 2rem;
 }
@@ -87,7 +88,7 @@ body {
 .productLink,
 .buyLink,
 .button {
-  font-size: 1.3rem;
+  font-size: var(--smallMedFont);
   background-color: var(--primaryGreen);
   font-weight: 400;
 }
@@ -127,40 +128,42 @@ body {
 
 .productName,
 .contactDetailsHeading {
-  padding: 1rem 1rem 0 1rem;
   font-size: var(--mediumFont);
   font-weight: 500;
   color: var(--headingGreen);
 }
+
+.contactDetailsHeading {
+  padding: 1rem 1rem 0 1rem;
+}
+
 .productFeatures {
   font-weight: 300;
 }
 
 .productSize {
-  padding: 1rem 1rem 0 1rem;
-}
-
-.productPot {
-  padding: 0 1rem;
+  padding-top: 1rem;
 }
 
 .productPrice,
 .selectedProductPrice {
   color: var(--featureGrey);
-  font-size: var(--mediumFont);
   font-weight: 500;
 }
 
 .productPrice {
-  margin: 1rem;
+  font-size: var(--smallMedFont);
+  padding-top: 1rem;
 }
 
 .selectedProductPrice {
+  font-size: var(--mediumFont);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.selectedProductText {
+.selectedProductText,
+.productText {
   padding: 1.5rem;
 }
 
