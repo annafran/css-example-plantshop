@@ -1,90 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header gridTablet gridDesktop largeGridGap">
+      <div class="logoContainer">
+        <img
+          class="logo"
+          src="images/logo-transparent.png"
+          alt="company logo"
         />
-        <link rel="stylesheet" href="style.css" />
-        <title>Home</title>
-    </head>
-    <body>
-        <header class="header gridTablet gridDesktop largeGridGap">
-            <div class="logoContainer">
-                <img
-                    class="logo"
-                    src="images/logo-transparent.png"
-                    alt="company logo"
-                />
-            </div>
-            <nav class="navContainer">
-                <ul class="navList list gridTablet smallGridGap">
-                    <li>
-                        <a class="navLink" href="/">Home</a>
-                    </li>
-                    <li>
-                        <a class="navLink" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <h1 class="primaryHeading secondaryHeading">Browse our products</h1>
-            <ul class="productsList list gridTablet gridDesktop largeGridGap">
-                <li class="productCard">
-                    <img
-                        class="productPhoto"
-                        src="images/product-string-of-fishhooks.jpg"
-                        alt="fishhooks product"
-                    />
-                    <h2 class="productName">String of Fishhooks</h2>
-                    <p class="productSize productFeatures">6 Inch</p>
-                    <p class="productPot productFeatures">Unpotted</p>
-                    <p class="productPrice">$30.00</p>
-                    <div class="productLinkContainer">
-                        <a class="productLink" href="/product1.html"
-                            >View product</a
-                        >
-                    </div>
-                </li>
-                <li class="productCard">
-                    <img
-                        class="productPhoto"
-                        src="images/product-tradescantia.jpg"
-                        alt="fishhooks product"
-                    />
-                    <h2 class="productName">Tradescantia Nanouk</h2>
-                    <p class="productSize productFeatures">2 Inch</p>
-                    <p class="productPot productFeatures">In Ceramic Pot</p>
-                    <p class="productPrice">$17.00</p>
-                    <div class="productLinkContainer">
-                        <a class="productLink" href="/product2.html"
-                            >View product</a
-                        >
-                    </div>
-                </li>
-                <li class="productCard">
-                    <img
-                        class="productPhoto"
-                        src="images/product-string-of-dolphins.jpg"
-                        alt="fishhooks product"
-                    />
-                    <h2 class="productName">String of Dolphins</h2>
-                    <p class="productSize productFeatures">2 Inch</p>
-                    <p class="productPot productFeatures">Unpotted</p>
-                    <p class="productPrice">$8.00</p>
-                    <div class="productLinkContainer">
-                        <a class="productLink" href="/product3.html"
-                            >View product</a
-                        >
-                    </div>
-                </li>
-            </ul>
-        </main>
-    </body>
+      </div>
+      <nav class="navContainer">
+        <ul class="navList list gridTablet smallGridGap">
+          <li>
+            <a class="navLink" href="/">Home</a>
+          </li>
+          <li>
+            <a class="navLink" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="primaryHeading secondaryHeading">Browse our products</h1>
+      <ul class="productsList list gridTablet gridDesktop largeGridGap">
+        <li class="productCard">
+          <img
+            class="productPhoto"
+            src="images/product-string-of-fishhooks.jpg"
+            alt="fishhooks product"
+          />
+          <h2 class="productName">String of Fishhooks</h2>
+          <p class="productSize productFeatures">6 Inch</p>
+          <p class="productPot productFeatures">Unpotted</p>
+          <p class="productPrice">$30.00</p>
+          <div class="productLinkContainer">
+            <a class="productLink" href="/product1.html">View product</a>
+          </div>
+        </li>
+        <li class="productCard">
+          <img
+            class="productPhoto"
+            src="images/product-tradescantia.jpg"
+            alt="fishhooks product"
+          />
+          <h2 class="productName">Tradescantia Nanouk</h2>
+          <p class="productSize productFeatures">2 Inch</p>
+          <p class="productPot productFeatures">In Ceramic Pot</p>
+          <p class="productPrice">$17.00</p>
+          <div class="productLinkContainer">
+            <a class="productLink" href="/product2.html">View product</a>
+          </div>
+        </li>
+        <li class="productCard">
+          <img
+            class="productPhoto"
+            src="images/product-string-of-dolphins.jpg"
+            alt="fishhooks product"
+          />
+          <h2 class="productName">String of Dolphins</h2>
+          <p class="productSize productFeatures">2 Inch</p>
+          <p class="productPot productFeatures">Unpotted</p>
+          <p class="productPrice">$8.00</p>
+          <div class="productLinkContainer">
+            <a class="productLink" href="/product3.html">View product</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
