@@ -1,71 +1,71 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primaryGreen: #3f6660;
-  --secondaryGreen: #4e7e77;
-  --highlightGreen: #8bdf83;
-  --darkWhite: #fefffe;
-  --headingGreen: #304f4a;
-  --featureGrey: #737373;
-  --greenishGrey: #ebeeeb;
+    --primaryGreen: #3f6660;
+    --secondaryGreen: #4e7e77;
+    --highlightGreen: #8bdf83;
+    --darkWhite: #fefffe;
+    --headingGreen: #304f4a;
+    --featureGrey: #737373;
+    --greenishGrey: #ebeeeb;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .header {
-  background-color: var(--primaryGreen);
+    background-color: var(--primaryGreen);
 }
 
 .main {
-  background-color: var(--darkWhite);
+    background-color: var(--darkWhite);
 }
 
 .logoContainer {
-  width: 40%;
-  margin: 0 auto;
+    width: 40%;
+    margin: 0 auto;
 }
 .logo,
 .productPhoto {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .list {
-  list-style: none;
+    list-style: none;
 }
 
 .navLink {
-  background-color: var(--secondaryGreen);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1rem;
+    background-color: var(--secondaryGreen);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .navLink,
 .productLink,
 .buyLink,
 .button {
-  color: var(--darkWhite);
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  padding: 1rem;
-  border: none;
-  text-align: center;
+    color: var(--darkWhite);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    border: none;
+    text-align: center;
 }
 
 .productLink,
 .buyLink,
 .button {
-  font-size: 1.3rem;
-  background-color: var(--primaryGreen);
-  font-weight: 400;
+    font-size: 1.3rem;
+    background-color: var(--primaryGreen);
+    font-weight: 400;
 }
 
 .navLink:hover,
@@ -76,228 +76,224 @@ body {
 .buyLink:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer;
-  color: var(--primaryGreen);
-  background-color: var(--highlightGreen);
+    cursor: pointer;
+    color: var(--primaryGreen);
+    background-color: var(--highlightGreen);
 }
 
 .primaryHeading {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .secondaryHeading {
-  color: var(--headingGreen);
-  font-weight: 600;
+    color: var(--headingGreen);
+    font-weight: 600;
 }
 
 .productCard,
 .selectedProduct,
 .contactFormContainer {
-  margin: 3rem;
-  border-radius: 0.125rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 3rem;
+    border-radius: 0.125rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .productName,
 .contactDetailsHeading {
-  padding: 1rem 1rem 0 1rem;
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: var(--headingGreen);
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--headingGreen);
 }
 .productFeatures {
-  font-size: 1rem;
-  font-weight: 300;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .productSize {
-  padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .productPot {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 .productPrice {
-  color: var(--featureGrey);
-  font-size: 1.6rem;
-  padding: 1rem;
-  font-weight: 400;
+    color: var(--featureGrey);
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-weight: 400;
 }
 
 .selectedProductText {
-  padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 .selectedProductName {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .selectedProductFeatures {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  color: var(--darkWhite);
-  background-color: var(--secondaryGreen);
-  width: max-content;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: var(--darkWhite);
+    background-color: var(--secondaryGreen);
+    width: max-content;
 }
 
 .selectedProductPrice {
-  color: var(--featureGrey);
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    color: var(--featureGrey);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .selectedProductDescription {
-  font-weight: 300;
-  line-height: 1.4rem;
-  margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
 }
 
 .productInstructions {
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-  line-height: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
 }
 
 .productInstructionsHeader,
 .addressLabel {
-  font-weight: 500;
-  font-size: 1.125rem;
+    font-weight: 500;
+    font-size: 1.125rem;
 }
 
 .contactFormContainer {
-  background-color: var(--greenishGrey);
-  padding: 1rem;
+    background-color: var(--greenishGrey);
+    padding: 1rem;
+}
+
+.form-group {
+    font-size: 1.1rem;
+    display: block;
 }
 
 .form-label {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .form-input {
-  display: block;
-  width: 100%;
-  font-size: 1.1rem;
-  padding: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  font-family: inherit;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
 }
 
 .message {
-  height: 7rem;
-  resize: none;
-  overflow: scroll;
-  width: 100%;
+    height: 7rem;
+    resize: none;
+    overflow: scroll;
+    width: 100%;
 }
 
 .contactDetailsContainer {
-  margin: 3rem;
+    margin: 3rem;
 }
 
 .contactHeading {
-  margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .contactDetails {
-  line-height: 1.4rem;
-  padding-bottom: 0.8rem;
-  font-size: 1.125rem;
+    line-height: 1.4rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 48rem) {
-  .gridTablet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .largeGridGap {
-    grid-gap: 3rem;
-  }
-  .smallGridGap {
-    grid-gap: 2rem;
-  }
-  .header,
-  .productsList {
-    align-items: center;
-  }
-  .logoContainer {
-    justify-self: left;
-    margin-left: 3rem;
-  }
-  .navContainer {
-    grid-column: 2 / 4;
-  }
-  .navList {
-    justify-content: end;
-    margin-right: 3rem;
-  }
-  .main {
-    margin: 3rem;
-  }
-  .primaryHeading {
-    text-align: left;
-  }
-  .selectedProduct {
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  .selectedProductContainer {
-    border-radius: 0.125rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .productCard {
-    margin: 0;
-    height: 100%;
-    display: grid;
-  }
-  .productLinkContainer {
-    height: max-content;
-    align-self: end;
-  }
-  .contactFormContainer,
-  .contactDetailsContainer {
-    margin: 0;
-  }
+    .gridTablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .largeGridGap {
+        grid-gap: 3rem;
+    }
+    .smallGridGap {
+        grid-gap: 2rem;
+    }
+    .header {
+        align-items: center;
+    }
+    .logoContainer {
+        justify-self: left;
+        margin-left: 3rem;
+    }
+    .navContainer {
+        grid-column: 2 / 4;
+    }
+    .navList {
+        justify-content: end;
+        margin-right: 3rem;
+    }
+    .main {
+        margin: 3rem auto;
+        width: 90%;
+    }
+    .primaryHeading {
+        text-align: left;
+    }
+    .selectedProduct {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .selectedProductContainer {
+        border-radius: 0.125rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .productCard {
+        height: 100%;
+        display: grid;
+    }
+    .productLinkContainer {
+        height: max-content;
+        align-self: end;
+    }
+    .contactFormContainer,
+    .contactDetailsContainer,
+    .productCard,
+    .selectedProduct {
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 64rem) {
-  .gridDesktop {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .largeGridGap {
-    grid-gap: 3rem;
-  }
-  .navContainer {
-    grid-column: 3 / 4;
-  }
-  .primaryHeading {
-    font-size: 2rem;
-    text-align: left;
-  }
-  .main {
-    margin: 3rem auto;
-    width: 80%;
-  }
-  .productName {
-    font-size: 1.5rem;
-  }
-  .selectedProductContainer {
-    grid-column: 2 / 4;
-  }
-  .contactFormContainer {
-    grid-column: 1 / 3;
-  }
+    .gridDesktop {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navContainer {
+        grid-column: 3 / 4;
+    }
+    .primaryHeading {
+        font-size: 2rem;
+    }
+    .main {
+        width: 80%;
+    }
+    .productName {
+        font-size: 1.5rem;
+    }
+    .selectedProductContainer {
+        grid-column: 2 / 4;
+    }
+    .contactFormContainer {
+        grid-column: 1 / 3;
+    }
 }
