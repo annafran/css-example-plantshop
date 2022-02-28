@@ -1,102 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="header gridTablet gridDesktop largeGridGap">
+      <div class="logoContainer">
+        <img
+          class="logo"
+          src="images/logo-transparent.png"
+          alt="company logo"
         />
-        <link rel="stylesheet" href="style.css" />
-        <title>Contact</title>
-    </head>
-    <body>
-        <header class="header gridTablet gridDesktop largeGridGap">
-            <div class="logoContainer">
-                <img
-                    class="logo"
-                    src="images/logo-transparent.png"
-                    alt="company logo"
-                />
+      </div>
+      <nav class="navContainer">
+        <ul class="navList list gridTablet smallGridGap">
+          <li>
+            <a class="navLink" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="navLink" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="primaryHeading secondaryHeading">
+        Feel free to get in touch anytime
+      </h1>
+      <div class="smallGridGap largeGridGap gridTablet gridDesktop">
+        <section class="contactFormContainer">
+          <form
+            class="contactForm"
+            action="https://formspree.io/f/mvolrpew"
+            method="post"
+          >
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input name"
+                required
+              />
             </div>
-            <nav class="navContainer">
-                <ul class="navList list gridTablet smallGridGap">
-                    <li>
-                        <a class="navLink" href="/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="navLink" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <h1 class="primaryHeading secondaryHeading">
-                Feel free to get in touch anytime
-            </h1>
-            <div class="smallGridGap largeGridGap gridTablet gridDesktop">
-                <section class="contactFormContainer">
-                    <form
-                        class="contactForm"
-                        action="https://formspree.io/f/mvolrpew"
-                        method="post"
-                    >
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                class="form-input name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                class="form-input email"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label"
-                                >Message</label
-                            >
-                            <textarea
-                                name="message"
-                                id="message"
-                                cols="30"
-                                rows="10"
-                                class="form-input message"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="button">Contact us</button>
-                    </form>
-                </section>
-                <section class="contactDetailsContainer">
-                    <h2 class="secondaryHeading contactHeading">
-                        Contact details:
-                    </h2>
-                    <p class="contactDetails">
-                        123 Fake Street<br />Auckland<br />New Zealand
-                    </p>
-                    <p class="contactDetails">
-                        <span class="addressLabel">Phone:</span> 09 123 45678
-                    </p>
-                    <p class="contactDetails">
-                        <span class="addressLabel">Email:</span>
-                        <a href="emailto:sales@plantsandthings.co.nz"
-                            >sales@plantsandthings.co.nz</a
-                        >
-                    </p>
-                </section>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input email"
+                required
+              />
             </div>
-        </main>
-    </body>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="form-input message"
+              ></textarea>
+            </div>
+            <button type="submit" class="button">Contact us</button>
+          </form>
+        </section>
+        <section class="contactDetailsContainer">
+          <h2 class="secondaryHeading contactHeading">Contact details:</h2>
+          <p class="contactDetails">
+            123 Fake Street<br />Auckland<br />New Zealand
+          </p>
+          <p class="contactDetails">
+            <span class="addressLabel">Phone:</span> 09 123 45678
+          </p>
+          <p class="contactDetails">
+            <span class="addressLabel">Email:</span>
+            <a href="emailto:sales@plantsandthings.co.nz"
+              >sales@plantsandthings.co.nz</a
+            >
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
