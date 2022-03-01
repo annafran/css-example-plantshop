@@ -2,24 +2,24 @@ name: Lighthouse
 on: [push]
 
 jobs:
-    lighthouse:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@master
-            - run: mkdir /tmp/artifacts
-            - name: Lighthouse
-              uses: foo-software/lighthouse-check-action@master
-              id: lighthouseCheck
-              with:
-                  outputDirectory: /tmp/artifacts
-                  urls: "https://plantsnthings.netlify.app"
-            - name: Upload artifacts
-              uses: actions/upload-artifact@v2
-              with:
-                  name: Lighthouse reports
-                  path: /tmp/artifacts
-            - name: Verify Lighthouse Check results
-              uses: foo-software/lighthouse-check-status-action@master
-              with:
-                  lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-                  minAccessibilityScore: "100"
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: mkdir /tmp/artifacts
+      - name: Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          outputDirectory: /tmp/artifacts
+          urls: "https://plantsnthings.netlify.app, https://plantsnthings.netlify.app/product1.html, https://plantsnthings.netlify.app/product2.html, https://plantsnthings.netlify.app/product3.html, https://plantsnthings.netlify.app/contact.html"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Lighthouse reports
+          path: /tmp/artifacts
+      - name: Verify Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "100"
