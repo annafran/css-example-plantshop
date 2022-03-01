@@ -12,7 +12,7 @@ jobs:
         id: lighthouseCheck
         with:
           outputDirectory: /tmp/artifacts
-          urls: "https://plantsnthings.netlify.app, https://plantsnthings.netlify.app/product1.html, https://plantsnthings.netlify.app/product2.html, https://plantsnthings.netlify.app/product3.html, https://plantsnthings.netlify.app/contact.html"
+          urls: "https://plantsnthings.netlify.app,https://plantsnthings.netlify.app/product1.html,https://plantsnthings.netlify.app/product2.html,https://plantsnthings.netlify.app/product3.html,https://plantsnthings.netlify.app/contact.html"
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
